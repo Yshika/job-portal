@@ -32,13 +32,54 @@
     }
   }
 }
+.why-us {
+  .title-head {
+    color: #303f60;
+    font-size: 1.375rem;
+    margin: 5rem 8rem 0.5rem 8rem;
+    // font-weight: bold;
+  }
+  .card-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 0 6rem;
+  }
+}
 
+.companies {
+  margin: 2rem 0;
+  .title-comp {
+    color: #303f60;
+    font-size: 1.375rem;
+    margin: 5rem 8rem 0.5rem 8rem;
+    text-transform: capitalize;
+  }
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 0 9rem;
+    place-content: center;
+
+    .logo-block {
+        height: 5rem;
+
+      .logo-img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .home {
     display: block;
     margin: 2rem 3rem;
     text-align: center;
-    
+
     .caption-head {
       font-size: 2rem;
       margin-bottom: 3rem;
@@ -47,6 +88,12 @@
     .img-block {
       margin: 0px;
       height: 10rem;
+    }
+  }
+  .why-us {
+    .card-block {
+      grid-template-columns: 1fr;
+      margin: 0;
     }
   }
 }

@@ -1,6 +1,9 @@
 import React from "react";
 import "./style.scss";
 import img from "../../assets/img-girl.jpeg";
+import Card from "../../components/card";
+import logo from "../../assets/logo.png";
+import logo1 from "../../assets/logo1.png";
 
 const Home = () => {
   return (
@@ -17,10 +20,58 @@ const Home = () => {
           </div>
         </section>
         <section className="img-block">
-          <img src={img} className="img" />
+          <img alt="img" src={img} className="img" />
         </section>
       </div>
-      <section className="whyus">WHYUS</section>
+      <section className="why-us">
+        <div className="title-head">Why Us</div>
+        <div className="card-block">
+          <Card
+            title="Get More Visibility"
+            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."
+          />
+          <Card
+            title="Organize your candidates"
+            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+          />
+          <Card
+            title="Verify their abilities"
+            data="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore."
+          />
+        </div>
+      </section>
+      <section className="companies">
+        <div className="title-comp">companies who trust us</div>
+        <div className="logo">
+          <div className="logo-block">
+            <img alt="img" src={logo} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo1} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo1} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo1} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo1} className="logo-img" />
+          </div>
+          <div className="logo-block">
+            <img alt="img" src={logo} className="logo-img" />
+          </div>
+        </div>
+      </section>
     </>
   );
 };
