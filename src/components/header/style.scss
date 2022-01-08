@@ -1,35 +1,30 @@
 .header {
-    background: transparent linear-gradient(248deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat;
-    .section{
-        height: 4.375rem;
-        display: flex;
-        border-bottom: 1px solid white;
-        margin: 0 4.38rem;
-    }
-    .col{
-      flex: 50%;
-align-self: center;
-    }
-  .title {
-      font-weight: bold;
-      font-size: 22px;
-    .text-white {
-      color: white;
-    }
-
-    .text-blue {
-      color: #43afff;
-    }
+  // background: transparent linear-gradient(248deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat;
+  .section {
+    height: 4.375rem;
+    display: flex;
+    border-bottom: 1px solid white;
+    margin: 0 4.38rem;
   }
-  .btn{
-      text-align: right;
-      .btn-login{
-          color: white;
-        background: #43AFFF33 0% 0% no-repeat padding-box;
-        border: 1px solid #43AFFF;
-        border-radius: 5px;
-        font-weight: bold;
-        padding: 0.8rem 1.5rem
-      }
+  
+  .col {
+    flex: 50%;
+    align-self: center;
+  }
+  
+  .title {
+    font-size: 22px;   
+  }
+
+  .btn {
+    text-align: right;
+    .btn-login {
+      color: white;
+      background: #43afff33 0% 0% no-repeat padding-box;
+      border: 1px solid #43afff;
+      border-radius: 5px;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+    }
   }
 }
