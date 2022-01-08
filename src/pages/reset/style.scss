@@ -1,0 +1,19 @@
+.reset-main{
+    display: flex;
+    height: calc(100vh - 4.375rem);
+    justify-content: center;
+    align-items: center;
+  
+    .reset-box{
+        width: 557px;
+        height: 25rem;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 30px 36px #557da526;
+        border-radius: 20px;
+        padding: 1.25rem;
+    }
+
+    .btn{
+        text-align: center;
+    }
+}

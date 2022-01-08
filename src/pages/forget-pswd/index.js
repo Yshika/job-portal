@@ -1,7 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import "./style.scss";
 
 const ForgetPswd = () => {
+  const history = useHistory();
+
+  const routeToReset = () => {
+    history.push("/reset-password");
+  };
   return (
     <>
       <div className="dark-bg"></div>
@@ -20,7 +26,9 @@ const ForgetPswd = () => {
             className="login-input"
           ></input>
           <div className="btn">
-            <button className="title btn-login">Submit</button>
+            <button className="title btn-login" onClick={routeToReset}>
+              Submit
+            </button>
           </div>
         </div>
       </div>

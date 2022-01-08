@@ -17,6 +17,10 @@ const RouteArr = [
     route: "/forget-password",
     Component: lazy(() => import("../pages/forget-pswd")),
   },
+  {
+    route: "/reset-password",
+    Component: lazy(() => import("../pages/reset")),
+  },
 ];
 
 export default RouteArr;
