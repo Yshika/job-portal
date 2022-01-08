@@ -30,6 +30,7 @@
       .text-forgot {
         width: 50%;
         text-align: right;
+        cursor: pointer;
       }
     }
 
@@ -38,6 +39,9 @@
       place-items: center;
       .signup {
         margin-top: 4rem;
+        .signup-btn {
+          cursor: pointer;
+        }
       }
     }
   }
