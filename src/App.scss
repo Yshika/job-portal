@@ -9,3 +9,46 @@
 .text-blue {
   color: #43afff;
 }
+
+.color-dark{
+  color:#303f60;
+}
+
+.label {
+  margin-top: 1.4375rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.login-input {
+  background: #e8e8e833 0% 0% no-repeat padding-box;
+  border: 1px solid #c6c6c6;
+  border-radius: 5px;
+  height: 2.875rem;
+  width: 100%;
+  outline: none;
+  padding: 1rem;
+
+  &:focus-visible {
+    border: 1px solid #43afff;
+  }
+}
+
+.btn {
+ 
+  margin: 2.5rem 0;
+
+  .btn-login {
+    background: #43afff 0% 0% no-repeat padding-box;
+    border: 1px solid #43afff;
+    border-radius: 5px;
+    color: white;
+    padding: 0.8rem 1.875rem;
+    cursor: pointer;
+    width: 8rem;
+  }
+
+  .btn-login:hover {
+    background: #43afff33 0% 0% no-repeat padding-box;
+  }
+}

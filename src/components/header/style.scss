@@ -1,19 +1,20 @@
 .header {
-  // background: transparent linear-gradient(248deg, #303F60 0%, #1A253C 100%) 0% 0% no-repeat;
+  background-color: #303f60;
+
   .section {
     height: 4.375rem;
     display: flex;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #E8E8E833;
     margin: 0 4.38rem;
   }
-  
+
   .col {
     flex: 50%;
     align-self: center;
   }
-  
+
   .title {
-    font-size: 22px;   
+    font-size: 22px;
   }
 
   .btn {
@@ -23,8 +24,11 @@
       background: #43afff33 0% 0% no-repeat padding-box;
       border: 1px solid #43afff;
       border-radius: 5px;
-      font-weight: bold;
       padding: 0.8rem 1.5rem;
+      cursor: pointer;
+    }
+    .btn-login:hover {
+      background: #43afff 0% 0% no-repeat padding-box;
     }
   }
 }

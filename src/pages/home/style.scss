@@ -1,3 +1,6 @@
+.dark-bg{
+  min-height: 25rem;
+}
 .home {
   display: grid;
   grid-template-columns: 45% auto;
@@ -14,6 +17,10 @@
         border-radius: 5px;
         color: white;
         padding: 0.8rem 1.875rem;
+        cursor: pointer;
+      }
+      .btn-start:hover {
+        background: #43afff33 0% 0% no-repeat padding-box;
       }
     }
   }
@@ -34,10 +41,8 @@
 }
 .why-us {
   .title-head {
-    color: #303f60;
     font-size: 1.375rem;
     margin: 5rem 8rem 0.5rem 8rem;
-    // font-weight: bold;
   }
   .card-block {
     display: grid;
@@ -50,7 +55,6 @@
 .companies {
   margin: 2rem 0;
   .title-comp {
-    color: #303f60;
     font-size: 1.375rem;
     margin: 5rem 8rem 0.5rem 8rem;
     text-transform: capitalize;
@@ -64,7 +68,7 @@
     place-content: center;
 
     .logo-block {
-        height: 5rem;
+      height: 5rem;
 
       .logo-img {
         width: 100%;

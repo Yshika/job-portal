@@ -8,6 +8,8 @@ import logo1 from "../../assets/logo1.png";
 const Home = () => {
   return (
     <>
+      <div className="dark-bg" />
+
       <div className="home">
         <section className="caption-head">
           <div className="text-white">Welcome to</div>
@@ -24,7 +26,7 @@ const Home = () => {
         </section>
       </div>
       <section className="why-us">
-        <div className="title-head">Why Us</div>
+        <div className="title-head color-dark">Why Us</div>
         <div className="card-block">
           <Card
             title="Get More Visibility"
@@ -41,7 +43,7 @@ const Home = () => {
         </div>
       </section>
       <section className="companies">
-        <div className="title-comp">companies who trust us</div>
+        <div className="title-comp color-dark">companies who trust us</div>
         <div className="logo">
           <div className="logo-block">
             <img alt="img" src={logo} className="logo-img" />

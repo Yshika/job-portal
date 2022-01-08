@@ -5,7 +5,7 @@ const Card = ({ title, data }) => {
   return (
     <div className="card-disp">
       <div className="title-disp">{title}</div>
-      <div className="data-disp">{data}</div>
+      <div className="data-disp color-dark">{data}</div>
     </div>
   );
 };
