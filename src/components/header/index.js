@@ -6,6 +6,7 @@ const Header = ({ isLogedIn, setIsLogedIn }) => {
   const history = useHistory();
 
   const [modalLogin, setModalLogin] = useState(false);
+  const [logoutMsg, setLogoutMsg] = useState(false);
 
   const handleClick = () => {
     history.push("/login");
@@ -22,6 +23,7 @@ const Header = ({ isLogedIn, setIsLogedIn }) => {
     setIsLogedIn(false);
     setModalLogin(false);
     history.push("/");
+    setLogoutMsg(true);
   };
 
   return (
@@ -36,6 +38,22 @@ const Header = ({ isLogedIn, setIsLogedIn }) => {
             <button className="btn-login" onClick={handleClick}>
               Login/Signup
             </button>
+            {logoutMsg && (
+              <div className="logout">
+                <div className="logout-title text-blue">Logout</div>
+                <div
+                  className="logout-close"
+                  onClick={() => {
+                    setLogoutMsg(false);
+                  }}
+                >
+                  x
+                </div>
+                <div className="logout-msg">
+                  You have successfully logged out.
+                </div>
+              </div>
+            )}
           </div>
         ) : (
           <div className="col logged-in">

@@ -5,10 +5,15 @@ import notepadIcon from "../../assets/notepad-icon.png";
 import { useHistory } from "react-router-dom";
 import { jobsData } from "../../shared/posteddata";
 import Card from "../../components/card";
+import notepad from "../../assets/notepad.png";
+// import ReactPaginate from "react-paginate";
 
 const PostedJobs = () => {
   const history = useHistory();
   const [postedJobsData, setPostedJobsData] = useState([]);
+  const [appModal, setAppModal] = useState(false);
+  const [applicationModal, setApplicationModal] = useState([]);
+
   const routeToPostJob = () => {
     history.push("/post-a-job");
   };
@@ -16,6 +21,10 @@ const PostedJobs = () => {
   useEffect(() => {
     setPostedJobsData(jobsData);
   }, [jobsData]);
+
+  useEffect(() => {
+    console.log("valllllll", applicationModal);
+  }, [applicationModal]);
 
   return (
     <>
@@ -52,7 +61,10 @@ const PostedJobs = () => {
                     data={val?.jd}
                     location={val?.location}
                     applications={val?.applications}
+                    setApplicationModal={setApplicationModal}
+                    setAppModal={setAppModal}
                     classes="job-card"
+                    classTitle="job-title"
                   />
                 );
               })}
@@ -60,6 +72,57 @@ const PostedJobs = () => {
           </>
         )}
       </div>
+      {appModal && (
+        <div className="applications">
+          <div className="apps-modal">
+            <div className="apps-title color-dark">
+              Applicants for this job
+              <span className="apps-close" onClick={() => setAppModal(false)}>
+                X
+              </span>
+            </div>
+            <div className="apps-length">
+              Total {applicationModal?.length} applications
+            </div>
+            <div
+              className={
+                applicationModal?.length > 0
+                  ? "applications-card card-container"
+                  : "no-app card-container"
+              }
+            >
+              {applicationModal?.length ? (
+                applicationModal.map((val, index) => {
+                  return (
+                    <>
+                      <div key={index} className="avtr-card color-dark">
+                        <div className="avtr-name-email">
+                          <div className="avtr">{val?.name?.[0]}</div>
+                          <div className="name-email">
+                            <p>{val?.name}</p>
+                            <p>{val?.email}</p>
+                          </div>
+                        </div>
+                        <div className="card-skills">
+                          <div className="skills">Skills</div>
+                          <div>{val?.skills}</div>
+                        </div>
+                      </div>
+                    </>
+                  );
+                })
+              ) : (
+                <>
+                  <div className="no-img">
+                    <img src={notepad} alt="Nothing" className="img" />
+                  </div>
+                  <p>No applications available!</p>
+                </>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };

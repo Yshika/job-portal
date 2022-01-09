@@ -33,11 +33,17 @@
         border: unset;
         border-radius: 5px;
         padding: 9px 15px;
-        
+      
+        &:hover{
+          cursor: pointer;
+          background: white;
+        }
       }
+
     }
   }
 }
+
 @media only screen and (max-width: 600px) {
   .card-disp {
     margin: 1.5rem 2rem;

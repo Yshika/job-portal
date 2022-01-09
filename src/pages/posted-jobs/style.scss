@@ -1,10 +1,10 @@
-.dark-bg-posted{
+.dark-bg-posted {
   min-height: 13rem;
 }
 .home-posted {
   margin: 0 9rem;
-  padding-top: 1rem;
-  height: calc(100vh - 4.375rem);
+  padding: 1rem 0;
+  min-height: calc(100vh - 4.375rem);
   .breadcrumb {
     display: flex;
     align-items: baseline;
@@ -55,11 +55,105 @@
   .card-block {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
+    place-content: center;
     margin-top: 1.25rem;
 
-    .job-card{
+    .job-card {
       width: 17rem;
+    }
+    .job-title{
+      width: 100%;
+    }
+  }
+}
+
+.applications {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  display: grid;
+  place-items: center;
+
+  .apps-modal {
+    background: white;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+
+    .apps-title {
+      font-weight: bold;
+      font-size: 19px;
+      border-bottom: 1px solid #303f60;
+      padding: 20px 0;
+
+      .apps-close {
+        margin-left: 30rem;
+        cursor: pointer;
+      }
+    }
+
+    .apps-length {
+      margin: 0.6rem 0;
+    }
+
+    .card-container {
+      background: #a9afbc 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      padding: 0.5rem;
+      overflow-y: auto;
+      height: 70vh;
+
+      .avtr-card {
+        width: 302px;
+        height: 159px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #303f6080;
+        border-radius: 5px;
+
+        .avtr-name-email {
+          display: flex;
+          align-items: center;
+
+          .avtr {
+            width: 3rem;
+            height: 3rem;
+            background-color: #d9efff;
+            border-radius: 25px;
+            margin: 14px;
+            display: grid;
+            place-items: center;
+          }
+          .name-email {
+          }
+        }
+
+        .card-skills {
+          padding: 1rem;
+        }
+      }
+
+      .no-img {
+        width: 5.25rem;
+        height: 6.625rem;
+        .img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    .no-app {
+      display: grid;
+      place-items: center;
+      align-content: center;
+      font-size: 22px;
+    }
+
+    .applications-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      place-items: center;
     }
   }
 }
