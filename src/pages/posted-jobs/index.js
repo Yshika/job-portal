@@ -19,8 +19,8 @@ const PostedJobs = () => {
 
   return (
     <>
-      <div className="dark-bg" />
-      <div className="home">
+      <div className="dark-bg dark-bg-posted" />
+      <div className="home-posted">
         <div className="breadcrumb">
           <span className="icon">
             <img src={home} className="img" alt="home"></img>

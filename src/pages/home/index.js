@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <div className="dark-bg" />
+      <div className="dark-bg dark-bg-home" />
 
       <div className="home">
         <section className="caption-head">

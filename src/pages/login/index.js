@@ -21,7 +21,7 @@ const Login = ({ isLogedIn, setIsLogedIn }) => {
 
   return (
     <>
-      <div className="dark-bg" />
+      <div className="dark-bg dark-bg-login" />
       <div className="login-main">
         <div className="login-box">
           <div className="text title color-dark">Login</div>

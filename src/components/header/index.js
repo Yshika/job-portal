@@ -16,7 +16,7 @@ const Header = ({ isLogedIn, setIsLogedIn }) => {
   };
 
   const routeToPosts = () => {
-    history.push("");
+    history.push("/post-a-job");
   };
   const handleLogout = () => {
     setIsLogedIn(false);
