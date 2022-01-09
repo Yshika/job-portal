@@ -1,28 +1,29 @@
-import React, { Suspense } from "react";
+import React, { Suspense, useState } from "react";
 import { Route, Switch as Container } from "react-router-dom";
 import Header from "../components/header";
 import RouteArr from "./_base";
 
 const Routes = () => {
-  return (
-    <Container>
-      {RouteArr.map((item, i) => {
-        const { route, Component, exact = true } = item || {};
+  const [isLogedIn, setIsLogedIn] = useState(false);
 
-        return (
-          <Route key={i} path={route} exact={exact}>
-            <Suspense fallback={() => <div>Loading...</div>}>
-              <div>
-                <Header />
-              </div>
-              <div>
-                <Component />
-              </div>
-            </Suspense>
-          </Route>
-        );
-      })}
-    </Container>
+  return (
+    <>
+      <Header isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn} />
+
+      <Container>
+        {RouteArr.map((item, i) => {
+          const { route, Component, exact = true } = item || {};
+
+          return (
+            <Route key={i} path={route} exact={exact}>
+              <Suspense fallback={() => <div>Loading...</div>}>
+                <Component isLogedIn={isLogedIn} setIsLogedIn={setIsLogedIn} />
+              </Suspense>
+            </Route>
+          );
+        })}
+      </Container>
+    </>
   );
 };
 

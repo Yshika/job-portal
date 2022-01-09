@@ -1,5 +1,6 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import Input from "../../components/input";
 import "./style.scss";
 
 const ForgetPswd = () => {
@@ -18,13 +19,12 @@ const ForgetPswd = () => {
             Enter the email associated with your account and we’ll send you
             instructions to reset your password.
           </div>
-          <div className="label color-dark">Email Address</div>
-          <input
+          <Input
             placeholder="Enter your email"
             name="email"
             type="email"
-            className="login-input"
-          ></input>
+            label="Email Address"
+          />
           <div className="btn">
             <button className="title btn-login" onClick={routeToReset}>
               Submit

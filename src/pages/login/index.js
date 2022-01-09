@@ -1,8 +1,9 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
+import Input from "../../components/input";
 import "./style.scss";
 
-const Login = () => {
+const Login = ({ isLogedIn, setIsLogedIn }) => {
   const history = useHistory();
 
   const routeToForgetPswd = () => {
@@ -13,20 +14,23 @@ const Login = () => {
     history.push("signup");
   };
 
+  const routeToPosts = () => {
+    setIsLogedIn(true);
+    history.push("/posted-jobs");
+  };
+
   return (
     <>
       <div className="dark-bg" />
       <div className="login-main">
         <div className="login-box">
           <div className="text title color-dark">Login</div>
-          <div className="label color-dark">Email Address</div>
-          <input
+          <Input
             placeholder="Enter your email"
             name="email"
             type="email"
-            className="login-input"
-          ></input>
-
+            label="Email Address"
+          />
           <div className="label-pswd">
             <div className="label color-dark text-pswd">Password</div>
             <div
@@ -45,7 +49,9 @@ const Login = () => {
           ></input>
 
           <div className="btn">
-            <button className="title btn-login">Login</button>
+            <button className="title btn-login" onClick={routeToPosts}>
+              Login
+            </button>
             <div className="title signup">
               <span className="color-dark">New to MyJobs?</span>
               <span className="text-blue signup-btn" onClick={routeToSignup}>

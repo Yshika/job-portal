@@ -21,6 +21,14 @@ const RouteArr = [
     route: "/reset-password",
     Component: lazy(() => import("../pages/reset")),
   },
+  {
+    route: "/posted-jobs",
+    Component: lazy(() => import("../pages/posted-jobs")),
+  },
+  {
+    route: "/post-a-job",
+    Component: lazy(() => import("../pages/post-jobs")),
+  },
 ];
 
 export default RouteArr;
