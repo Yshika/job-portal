@@ -42,12 +42,14 @@
   }
 }
 .why-us {
+  background-color: rgba($grey, 0.2);
+  
+  // padding: 0.5rem 0;
   .title-head {
     font-size: 1.375rem;
     margin: 5rem 8rem 0.5rem 8rem;
   }
   .card-block {
-    background-color: rgba($grey, 0.2);
     display: flex;
     flex-wrap: wrap;
     // margin: 2rem 0 0 8rem;
@@ -55,7 +57,7 @@
     gap: 2rem;
 
     .card-margin {
-      margin: 1.5rem 2rem;
+      // margin: 1.5rem 2rem;
       transition: 0.5s ease-out;
       background-color: $white;
 
