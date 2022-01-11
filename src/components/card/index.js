@@ -1,5 +1,5 @@
 import "./style.scss";
-import React, { useState } from "react";
+import React from "react";
 import locIcon from "../../assets/location.png";
 const Card = ({
   title,
@@ -23,9 +23,11 @@ const Card = ({
         <div className="data-disp color-dark">{data}</div>
         {location?.length > 0 && (
           <div className="jobs-desc">
-            <div className="loc-img">
-              <img src={locIcon} alt="" className="img" />
-              <div>{location}</div>
+            <div className="loc">
+              <div className="loc-img">
+                <img src={locIcon} alt="" className="img" />
+              </div>
+              <div className="loc-name">{location}</div>
             </div>
             <div className="btn-appl">
               <button

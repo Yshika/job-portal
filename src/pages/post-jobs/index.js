@@ -1,8 +1,14 @@
 import "./style.scss";
 import React from "react";
 import Input from "../../components/input";
+import { useHistory } from "react-router-dom";
 
 const PostJobs = () => {
+  const history = useHistory();
+
+  const routeToJobs = () => {
+    history.push("/posted-jobs");
+  };
   return (
     <>
       <div className="dark-bg"></div>
@@ -30,7 +36,9 @@ const PostJobs = () => {
             label="Location*"
           />
           <div className="btn">
-            <button className="title btn-login">Post</button>
+            <button className="title btn-login" onClick={routeToJobs}>
+              Post
+            </button>
           </div>
         </div>
       </div>

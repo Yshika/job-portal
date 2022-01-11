@@ -1,17 +1,18 @@
+@import "./shared/styles/_colors.scss";
 .title {
   font-weight: bold;
 }
 
 .text-white {
-  color: white;
+  color: $white;
 }
 
 .text-blue {
-  color: #43afff;
+  color: $blue;
 }
 
 .color-dark {
-  color: #303f60;
+  color: $navy;
 }
 
 .label {
@@ -30,7 +31,7 @@
   padding: 1rem;
 
   &:focus-visible {
-    border: 1px solid #43afff;
+    border: 1px solid $blue;
   }
 }
 
@@ -38,16 +39,16 @@
   margin: 2.5rem 0;
 
   .btn-login {
-    background: #43afff 0% 0% no-repeat padding-box;
-    border: 1px solid #43afff;
+    background: $blue 0% 0% no-repeat padding-box;
+    border: 1px solid $blue;
     border-radius: 5px;
-    color: white;
+    color:$white;
     padding: 0.8rem 1.875rem;
     cursor: pointer;
     width: 8rem;
   }
 
   .btn-login:hover {
-    background: #43afff33 0% 0% no-repeat padding-box;
+    background: $navy 0% 0% no-repeat padding-box;
   }
 }

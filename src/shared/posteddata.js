@@ -1,8 +1,8 @@
 export const jobsData = [
   {
     title: "UI UX Designer",
-    jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incium dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incium dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -69,7 +69,7 @@ export const jobsData = [
   {
     title: "Java Developer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -106,13 +106,19 @@ export const jobsData = [
   {
     title: "UI UX Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
         email: "abc123@email.com",
         skills: "Coding, designing, graphics, website, app ui",
       },
+      {
+        name: "Nick Gordon",
+        email: "abc123@email.com",
+        skills: "Coding, designing, graphics, website, app ui",
+      },
+
       {
         name: "Nick Gordon",
         email: "abc123@email.com",
@@ -143,13 +149,13 @@ export const jobsData = [
   {
     title: "Empty App Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [],
   },
   {
     title: "UI UX Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -186,7 +192,7 @@ export const jobsData = [
   {
     title: "Java Developer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -223,7 +229,7 @@ export const jobsData = [
   {
     title: "Front-end Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -260,13 +266,13 @@ export const jobsData = [
   {
     title: "Empty App Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [],
   },
   {
     title: "UI UX Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -303,7 +309,7 @@ export const jobsData = [
   {
     title: "UI UX Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -340,7 +346,7 @@ export const jobsData = [
   {
     title: "UI UX Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [
       {
         name: "Eliza Lucas",
@@ -377,7 +383,7 @@ export const jobsData = [
   {
     title: "Empty App Designer",
     jd: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt…",
-    location: "Bengaluru",
+    location: "Bangaluru",
     applications: [],
   },
 ];

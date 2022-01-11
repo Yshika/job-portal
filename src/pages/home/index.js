@@ -21,7 +21,7 @@ const Home = () => {
         <section className="caption-head">
           <div className="text-white">Welcome to</div>
           <div className="title">
-            <span className="text-white">My</span>
+            <span className="text-white">Our</span>
             <span className="text-blue">Jobs</span>
           </div>
           <div className="btn">

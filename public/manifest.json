@@ -1,6 +1,6 @@
 {
-  "short_name": "MyJobs",
-  "name": "Create React App Sample",
+  "short_name": "OurJobs",
+  "name": "Create Job Applications",
   "icons": [],
   "start_url": ".",
   "display": "standalone",

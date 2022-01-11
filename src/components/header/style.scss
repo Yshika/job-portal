@@ -1,5 +1,6 @@
+@import "../../shared/styles/_colors.scss";
 .header {
-  background-color: #303f60;
+  background-color: $navy;
 
   .section {
     height: 4.375rem;
@@ -12,7 +13,7 @@
       z-index: 1;
       right: 0;
       top: 3.5rem;
-      background: #ffffff 0% 0% no-repeat padding-box;
+      background: $white 0% 0% no-repeat padding-box;
       box-shadow: 0px 3px 6px #557da526;
       border-radius: 5px;
       text-align: left;
@@ -25,6 +26,7 @@
         position: absolute;
         top: 1.5rem;
         right: 2rem;
+        cursor: pointer;
       }
       .logout-msg {
         margin: 1.25rem;
@@ -46,15 +48,15 @@
   .btn {
     text-align: right;
     .btn-login {
-      color: white;
-      background: #43afff33 0% 0% no-repeat padding-box;
-      border: 1px solid #43afff;
+      color: $white;
+      background: $blue 0% 0% no-repeat padding-box;
+      border: 1px solid $blue;
       border-radius: 5px;
-      padding: 0.8rem 1.5rem;
+      padding: 0.8rem 0.5rem;
       cursor: pointer;
     }
     .btn-login:hover {
-      background: #43afff 0% 0% no-repeat padding-box;
+      background: $navy 0% 0% no-repeat padding-box;
     }
   }
 
@@ -91,7 +93,7 @@
       z-index: 2;
       width: 7rem;
       height: 3rem;
-      background: white;
+      background: $white;
       border-radius: 5px;
       display: flex;
       align-items: center;
@@ -108,7 +110,7 @@
 
       &:after {
         border: 10px solid transparent;
-        border-bottom-color: #ffffff;
+        border-bottom-color: $white;
       }
     }
   }

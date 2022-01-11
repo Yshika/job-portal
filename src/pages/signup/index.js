@@ -18,7 +18,9 @@ const SignUp = () => {
           <div className="label">I'm a*</div>
           <div className="btn btn-margin">
             <button className="title btn-login">Recruiter</button>
-            <button className="title btn-login btn-candidate">Candidate</button>
+            <button className="title btn-login btn-candidate" disabled>
+              Candidate
+            </button>
           </div>
           <div className="label color-dark">Full Name</div>
           <input

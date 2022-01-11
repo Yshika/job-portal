@@ -20,7 +20,7 @@ const PostedJobs = () => {
 
   useEffect(() => {
     setPostedJobsData(jobsData);
-  }, [jobsData]);
+  }, []);
 
   useEffect(() => {
     console.log("valllllll", applicationModal);
@@ -38,7 +38,7 @@ const PostedJobs = () => {
         </div>
         <div className="text-white home-page">Jobs posted by you</div>
 
-        {postedJobsData?.length == 0 ? (
+        {postedJobsData?.length === 0 ? (
           <div className="job-apps">
             <img src={notepadIcon} alt="notepad" className="notepad-img" />
             <div className="color-dark no-jobs">
@@ -76,7 +76,7 @@ const PostedJobs = () => {
         <div className="applications">
           <div className="apps-modal">
             <div className="apps-title color-dark">
-              Applicants for this job
+              <p>Applicants for this job</p>
               <span className="apps-close" onClick={() => setAppModal(false)}>
                 X
               </span>

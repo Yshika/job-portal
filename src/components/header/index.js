@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useHistory } from "react-router-dom";
 import "./style.scss";
 
@@ -30,7 +30,7 @@ const Header = ({ isLogedIn, setIsLogedIn }) => {
     <header className="header">
       <div className="section">
         <div className="title col" onClick={routeToHome}>
-          <span className="text-white">My</span>
+          <span className="text-white">Our</span>
           <span className="text-blue">Jobs</span>
         </div>
         {!isLogedIn ? (

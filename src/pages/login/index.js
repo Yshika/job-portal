@@ -53,7 +53,7 @@ const Login = ({ isLogedIn, setIsLogedIn }) => {
               Login
             </button>
             <div className="title signup">
-              <span className="color-dark">New to MyJobs?</span>
+              <span className="color-dark">New to OurJobs?</span>
               <span className="text-blue signup-btn" onClick={routeToSignup}>
                 {" "}
                 Create an account

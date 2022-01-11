@@ -1,47 +1,67 @@
+@import "../../shared/styles/_colors.scss";
 .card-disp {
   padding: 1.5rem 1.35rem;
-  background: #ffffff 0% 0% no-repeat padding-box;
+  background: $white 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 6px hsla(210, 32%, 49%, 0.149);
   border-radius: 5px;
   // height: 12rem;
   width: 21.3rem;
 
   .title-disp {
-    color: #43afff;
+    color: $blue;
     font-size: 22px;
     width: 45%;
+    transition: 250ms ease-in;
   }
 
   .data-disp {
     margin-top: 1.8125rem;
     font-size: 0.875rem;
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    transition: 250ms ease-in;
   }
   .jobs-desc {
     display: flex;
     justify-content: space-between;
     margin-top: 0.5rem;
     align-items: center;
-
-    .loc-img {
+    .loc {
+      width: 40%;
       display: flex;
-      height: 1rem;
-      width: 0.5rem;
+      .loc-img {
+        // height: 1.2rem;
+        width: 20%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+      .loc-name {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
     }
     .btn-appl {
       .btn-appls {
-        background: #43afff33 0% 0% no-repeat padding-box;
+        background: $blue 0% 0% no-repeat padding-box;
         border: unset;
         border-radius: 5px;
-        padding: 9px 15px;
-      
-        &:hover{
+        padding: 0.5rem 0.5rem;
+
+        &:hover {
           cursor: pointer;
-          background: white;
+          background: $white;
         }
       }
-
     }
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -50,6 +70,12 @@
     padding: 1.5rem 1.35rem;
     //   height: 4rem;
     //   width: 5rem;
+    .data-disp{
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+  }
+  .jobs-desc .btn-appl .btn-appls{
+    font-size: 0.6rem;
   }
 }
-

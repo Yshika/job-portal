@@ -1,3 +1,5 @@
+@import "../../shared/styles/_colors.scss";
+
 .dark-bg-home {
   min-height: 25rem;
 }
@@ -12,15 +14,15 @@
 
     .btn {
       .btn-start {
-        background: #43afff 0% 0% no-repeat padding-box;
-        border: 1px solid #43afff;
+        background: $blue 0% 0% no-repeat padding-box;
+        border: 1px solid $blue;
         border-radius: 5px;
-        color: white;
+        color: $white;
         padding: 0.8rem 1.875rem;
         cursor: pointer;
       }
       .btn-start:hover {
-        background: #43afff33 0% 0% no-repeat padding-box;
+        background: $navy 0% 0% no-repeat padding-box;
       }
     }
   }
@@ -45,14 +47,29 @@
     margin: 5rem 8rem 0.5rem 8rem;
   }
   .card-block {
-   
+    background-color: rgba($grey, 0.2);
     display: flex;
     flex-wrap: wrap;
-    margin: 2rem 0 0 8rem;
-    gap: 3rem;
+    // margin: 2rem 0 0 8rem;
+    padding: 1rem 8rem;
+    gap: 2rem;
 
-    .card-margin{
+    .card-margin {
       margin: 1.5rem 2rem;
+      transition: 0.5s ease-out;
+      background-color: $white;
+
+      &:hover {
+        background-color: rgba($navy, 0.6);
+        transform: scale(1.2);
+
+        .title-disp {
+          color: $white;
+        }
+        .data-disp {
+          color: $grey;
+        }
+      }
     }
   }
 }
@@ -116,7 +133,7 @@
       margin: 0;
       text-align: center;
     }
-    .logo{
+    .logo {
       margin: 3rem;
       gap: unset;
     }
